@@ -2,10 +2,43 @@
 <html>
     <head>
         <title>The Nautical Bovine - Contact Us</title>
+        <link href="restaurantstyles.css" rel="stylesheet" type="text/css"/>
+        <style>
+            #nameLabel, #emailLabel, #phoneLabel {
+                margin-left: 790px;
+            }
+            #name, #email, #phone, #inquiryReason {
+                width: 250px;
+                margin-left: 10px;
+            }
+            #inquiryReasonLabel {
+                margin-left: 710px;
+            }
+            #additionalInfoLabel {
+                margin-left: 680px;
+            }
+            #additionalInfo {
+                width: 250px;
+                height: 100px;
+                margin-left: 10px;
+            }
+            #visitedNoLabel {
+                margin-left: 620px;
+            }
+            #visitedNo, #monday {
+                margin-left: 10px;
+            }
+            #mondayLabel {
+                margin-left: 670px;
+            }
+            #sendRequest {
+                margin-left: 1000px;
+            }
+        </style>
     </head>
     <body>
         <header>
-            <h1 style="text-align:center">The Nautical Bovine</h1>
+            <h1>The Nautical Bovine</h1>
             <hr/>
         </header>
         <nav>
@@ -17,23 +50,23 @@
         <br/><br/>
         <form action="#" method="post">
             <div>
-                <label id="nameLabel" for="name" style="margin-top:0px;margin-left:790px;margin-right:0px;margin-bottom:0px;">Name: </label>
-                <input id="name" name="name" type="text" style="width:250px;margin-top:0px;margin-left:10px;margin-right:0px;margin-bottom:0px;"/>
+                <label id="nameLabel" for="name">Name: </label>
+                <input id="name" name="name" type="text"/>
                 <br/><br/>
             </div>
             <div>
-                <label id="emailLabel" for="email" style="margin-top:0px;margin-left:790px;margin-right:0px;margin-bottom:0px;">Email: </label>
-                <input id="email" name="email" type="text" style="width:250px;margin-top:0px;margin-left:10px;margin-right:0px;margin-bottom:0px;"/>
+                <label id="emailLabel" for="email">Email: </label>
+                <input id="email" name="email" type="text"/>
                 <br/><br/>
             </div>
             <div>
-                <label id="phoneLabel" for="phone" style="margin-top:0px;margin-left:790px;margin-right:0px;margin-bottom:0px;">Phone: </label>
-                <input id="phone" name="phone" type="text" style="width:250px;margin-top:0px;margin-left:10px;margin-right:0px;margin-bottom:0px;"/>
+                <label id="phoneLabel" for="phone">Phone: </label>
+                <input id="phone" name="phone" type="text"/>
                 <br/><br/>
             </div>
             <div>
-                <label id="inquiryReasonLabel" for="inquiryReason" style="margin-top:0px;margin-left:710px;margin-right:0px;margin-bottom:0px;">Reason for Inquiry: </label>
-                <select id="inquiryReason" name="inquiryReason" style="width:250px;margin-top:0px;margin-left:10px;margin-right:0px;margin-bottom:0px;">
+                <label id="inquiryReasonLabel" for="inquiryReason">Reason for Inquiry: </label>
+                <select id="inquiryReason" name="inquiryReason">
                     <option value="catering">Catering</option>
                     <option value="privateParty">Private Party</option>
                     <option value="feedback">Feedback</option>
@@ -42,34 +75,34 @@
                 <br/><br/>
             </div>
             <div>
-                <label id="additionalInfoLabel" for="additionalInfo" style="margin-top:0px;margin-left:680px;margin-right:0px;margin-bottom:0px;">Additional Information: </label>
-                <textarea id="additionalInfo" name="additionalInfo" style="width:250px;height:100px;margin-top:0px;margin-left:10px;margin-right:0px;margin-bottom:0px;"></textarea>
+                <label id="additionalInfoLabel" for="additionalInfo">Additional Information: </label>
+                <textarea id="additionalInfo" name="additionalInfo"></textarea>
                 <br/><br/>
             </div>
             <div>
-                <label id="visitedNoLabel" for="visitedNo" style="margin-top:0px;margin-left:620px;margin-right:0px;margin-bottom:0px;">Have you been to the restaurant? </label>
-                <input id="visitedNo" name="visitedNo" type="radio" value="no" style="margin-top:0px;margin-left:10px;margin-right:0px;margin-bottom:0px;"/> No
-                <input id="visitedYes" name="visitedYes" type="radio" value="yes" style="margin-top:0px;margin-left:0px;margin-right:0px;margin-bottom:0px;"/> Yes
+                <label id="visitedNoLabel" for="visitedNo">Have you been to the restaurant? </label>
+                <input id="visitedNo" name="visitedNo" type="radio" value="no"/> No
+                <input id="visitedYes" name="visitedYes" type="radio" value="yes"/> Yes
                 <br/><br/>
             </div>
             <div>
-                <label id="mondayLabel" for="monday" style="margin-top:0px;margin-left:670px;margin-right:0px;margin-bottom:0px;">Best days to contact you? </label>
-                <input id="monday" name="monday" type="checkbox" value="monday" style="margin-top:0px;margin-left:10px;margin-right:0px;margin-bottom:0px;"/>M
-                <input id="tuesday" name="tuesday" type="checkbox" value="tuesday" style="margin-top:0px;margin-left:0px;margin-right:0px;margin-bottom:0px;"/>T
-                <input id="wednesday" name="wednesday" type="checkbox" value="wednesday" style="margin-top:0px;margin-left:0px;margin-right:0px;margin-bottom:0px;"/>W
-                <input id="thursday" name="thursday" type="checkbox" value="thursday" style="margin-top:0px;margin-left:0px;margin-right:0px;margin-bottom:0px;"/>Th
-                <input id="friday" name="friday" type="checkbox" value="friday" style="margin-top:0px;margin-left:0px;margin-right:0px;margin-bottom:0px;"/>F
+                <label id="mondayLabel" for="monday">Best days to contact you? </label>
+                <input id="monday" name="monday" type="checkbox" value="monday"/>M
+                <input id="tuesday" name="tuesday" type="checkbox" value="tuesday"/>T
+                <input id="wednesday" name="wednesday" type="checkbox" value="wednesday"/>W
+                <input id="thursday" name="thursday" type="checkbox" value="thursday"/>Th
+                <input id="friday" name="friday" type="checkbox" value="friday"/>F
                 <br/><br/>
             </div>
             <div>
-                <input id="sendRequest" name="sendRequest" type="submit" value="Send Request" style="margin-top:0px;margin-left:50%;margin-right:0px;margin-bottom:0px;"/>
+                <input id="sendRequest" name="sendRequest" type="submit" value="Send Request"/>
             </div>
         </form>
         <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
         <footer>
             <hr/>
-            <h4 style="text-align:center">123 Happy St., Bloomington, Minnesota, 55437</h4>
-            <h4 style="text-align:center">(123)486-8863</h4>
+            <h4>123 Happy St., Bloomington, Minnesota, 55437</h4>
+            <h4>(123)486-8863</h4>
         </footer>
     </body>
 </html>
