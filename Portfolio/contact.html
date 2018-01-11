@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Riley Gartner - Contact</title>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div>
+            <h1>Contact Me</h1>
+        </div>
+        <div>
+            <hr/>
+            <p>
+            <a href="index.html">Home</a>
+            <a href="skills.html">Skills</a>
+            <a href="testimonials.html">Testimonials</a>
+            </p>
+            <hr/>
+        </div>
+        <div>
+            <h2>Information Request</h2>
+            <form action="submit.html" method="POST">
+                <div>
+                    <label id="firstNameLabel" for="firstName">First Name:</label><br/>
+                    <input id="firstName" name="firstName" type="text"/><br/>
+                </div>
+                <div>
+                    <label id="lastNameLabel" for="lastName">Last Name:</label><br/>
+                    <input id="lastName" name="lastName" type="text"/><br/>
+                </div>
+                <div>
+                    <label id="phoneLabel" for="phone">Phone Number</label><br/>
+                    <input id="phone" name="phone" type="text"/><br/>
+                </div>
+                <div>
+                    <label id="contactLabel" for="contact">Best time to call:</label><br/>
+                    <select id="contact" name="contact">
+                        <option value="default" selected>--Select One--</option>
+                        <option value="morning">Morning (8AM to 12PM Central)</option>
+                        <option value="afternoon">Afternoon (12PM to 5PM Central)</option>
+                        <option value="evening">Evening (5PM to 8PM Central)</option>
+                    </select>
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>I am interest in (check all that apply):</legend><br/>
+                        <input id="frontEnd" name="interest" type="checkbox" value="frontEnd"/>
+                        <label id="frontEndLabel" for="frontEnd">Front-End Web Development</label><br/>
+                        <input id="backEnd" name="interest" type="checkbox" value="backEnd"/>
+                        <label id="backEndLabel" for="backEnd">Back-End Web Development</label><br/>
+                        <input id="database" name="interest" type="checkbox" value="database"/>
+                        <label id="databaseLabel" for="database">Database Design</label><br/>
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>I have filled in the client questionnaire form:</legend><br/>
+                        <input id="choice1" name="questionnaire" type="radio" value="yes"/>
+                        <label id="choice1Label" for="choice1">Yes</label><br/>
+                        <input id="choice2" name="questionnaire" type="radio" value="no"/>
+                        <label id="choice2Label" for="choice2">No</label>
+                    </fieldset>
+                </div>
+                <div>
+                    <label id="infoLabel" for="info">Additional Information:</label><br/>
+                    <textarea id="info" name="info"></textarea><br/>
+                </div>
+                <div>
+                <input type="submit" id="submit" value="Submit"/>
+                </div>
+            </form>
+            <hr/>
+            <p>&copy; 2136 Riley Gartner</p>
+            <a href="https://www.thesoftwareguild.com/"><img src="images/SoftwareGuildLogo.png"/></a>
+        </div>
+    </body>
+</html>
