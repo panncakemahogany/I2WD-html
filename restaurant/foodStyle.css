@@ -1,0 +1,31 @@
+header, footer {
+    text-align: center;
+}
+header, nav, footer {
+    font-family: Arial, Helvetica, sans-serif;
+}
+th {
+    font-size: x-large;
+}
+#homeMain {
+    width: 395px;
+    margin: auto;
+    border: 2px solid black;
+    padding: 5px;
+    background-color: aqua;
+}
+body {
+    background-color: tan;
+}
+a:link {
+    color: #960018;
+}
+a:visited {
+    color: #E23D28;
+}
+a:hover {
+    font-weight: 900;
+}
+a:active {
+    text-decoration: none;
+}
