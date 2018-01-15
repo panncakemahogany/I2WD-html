@@ -2,7 +2,12 @@
 <html>
     <head>
         <title>The Nautical Bovine - Home Page</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="C:\Repos\I2WD-html\restaurant\bootstrap-3.3.7-dist\css\bootstrap.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="C:\Repos\I2WD-html\restaurant\bootstrap-3.3.7-dist\js\bootstrap.js"></script>
         <link href="foodStyle.css" rel="stylesheet" type="text/css"/>
+        <noscript><h1 style="text-align:center">This site is best viewed with JavaScript enabled!</h1></noscript>
     </head>
     <body>
         <div>
@@ -11,18 +16,60 @@
                 <hr/>
             </header>
         </div>
-        <div class="nav">
+        <div>
             <nav>
-                <h3>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="foodHome.html">Home</a>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
-                <a href="foodMenu.html">Menu</a>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
-                <a href="foodContact.html">Contact Us</a></h3>
+                <ul class="nav nav-pills">
+                    <li class="active"><a href="foodHome.html"><span class="glyphicon glyphicon-home"></span></a></li>
+                    <li class="inactive"><a href="foodMenu.html">Menu</a></li>
+                    <li class="inactive"><a href="foodContact.html">Contact Us</a></li>
+                </ul>
             </nav>
         </div>
         <div style="background-color:bisque">
             <hr/>
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel" data-slide-to="1" class></li>
+                    <li data-target="#carousel" data-slide-to="2" class></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="first-slide">
+                        <h1>Minneapolis location opening soon!</h1>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="second-slide">
+                        <h1>We are unveiling our Winter seasonal menu, with dishes available for a limited time only.</h1>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="third-slide">
+                        <h1>The Drink of the Month is SG Special Brew.</h1>
+                        </div>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#carousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <br/>
+            <div class="container">
+                <div class="jumbotron">
+                    <h1>Minneapolis location opening January 15th, 2018!</h1>
+                </div>
+            </div>
             <p style="text-align:center"><img src="images/a-415.jpg" alt="Image of Surfing Cow" style="width:400px;height:150px;"/></p>
-            <p id="homeMain">The Nautical Bovine is a grille that specializes in must-have surf and turf. Rated "The Best Fictional Restaurant Worldwide" in 2018, we pride ourselves on our ability to make mouth-watering fresh feasts daily. Due to recent public awareness, we've even had to install a revolving door capable of handling the traffic produced by the assembly line of customers who flow in and out of the bodega like a stream of human sardines. We guarantee freshness, since we had to develop both a slaughter house and a fishing wharf directly next to our facility to supply the biblical flood of consumers looking for our quality meals. Scientists have stated that the overwhelming consumer demand for our delicious entrées will have irrepairable effect on our ocean's eco-system. But we reckon they're charlatans, since they can't use their science to explain why our food is just so finger-lickin'-good!</p>
-            <br/><br/><br/><br/><br/><br/><br/><br/><br/><hr/>
+            <div class="container">
+                <p id="homeMain">The Nautical Bovine is a grille that specializes in must-have surf and turf. Rated "The Best Fictional Restaurant Worldwide" in 2018, we pride ourselves on our ability to make mouth-watering fresh feasts daily. Due to recent public awareness, we've even had to install a revolving door capable of handling the traffic produced by the assembly line of customers who flow in and out of the bodega like a stream of human sardines. We guarantee freshness, since we had to develop both a slaughter house and a fishing wharf directly next to our facility to supply the biblical flood of consumers looking for our quality meals. Scientists have stated that the overwhelming consumer demand for our delicious entrées will have irrepairable effect on our ocean's eco-system. But we reckon they're charlatans, since they can't use their science to explain why our food is just so finger-lickin'-good!</p>
+            </div>
+            <br/><hr/>
         </div>
         <div>
             <footer>

@@ -12,20 +12,54 @@ th {
     margin: auto;
     border: 2px solid black;
     padding: 5px;
-    background-color: aqua;
+    background-color: #7FFFD4;
 }
 body {
     background-color: tan;
 }
-a:link {
-    color: #960018;
+.nav-pills > li.active > a {
+    color: white;
+    background-color: #483C32;
+    text-decoration: underline;
 }
-a:visited {
-    color: #E23D28;
+.nav-pills > li.inactive > a {
+    color: white;
+    background-color: #7B3F00;
+    text-decoration: underline;
 }
-a:hover {
+.nav-pills > li.active > a:hover {
     font-weight: 900;
+    color: black;
+    background-color: #007BA7;
 }
-a:active {
+.nav-pills > li.inactive > a:hover {
+    font-weight: 900;
+    color: black;
+    background-color: #008B8B;
+}
+.nav-pills > li.inactive > a:active {
     text-decoration: none;
+}
+.nav-pills > li.active > a:active {
+    text-decoration: none;
+}
+div.jumbotron {
+    text-align: center;
+    background-color: #7FFFD4;
+}
+.carousel-inner {
+    text-align: center;
+}
+#carousel {
+    height: 120px;
+}
+div.first-slide, div.second-slide, div.third-slide {
+    color: white;
+    background-color: #C19A6B;
+    background-clip: padding-box;
+    padding: 10px 0px 42px 0px;
+}
+.jumbotron {
+    height: 140px;
+    padding-top: 0px;
 }

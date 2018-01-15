@@ -2,9 +2,10 @@
 <html>
     <head>
         <title>The Nautical Bovine - Menu</title>
+        <link rel="stylesheet" href="C:\Repos\I2WD-html\restaurant\bootstrap-3.3.7-dist\css\bootstrap.css"/>
         <link href="foodStyle.css" rel="stylesheet" type="text/css"/>
         <style>
-            table.main {
+            #main {
                 width: 90%;
                 height: 60%;
                 margin-left: 7%;
@@ -12,13 +13,19 @@
             tr.main {
                 text-align: center;
             }
-            table.beverages {
+            #beverages {
                 width: 75%;
                 height: 40%;
                 margin-left: 8%;
                 margin-top: 5%;
             }
             tr.beverages {
+                text-align: center;
+            }
+            div.row {
+                text-align: center;
+            }
+            th {
                 text-align: center;
             }
         </style>
@@ -30,18 +37,20 @@
                 <hr/>
             </header>
         </div>
-        <div class="nav">
+        <div>
             <nav>
-                <h3>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="foodHome.html">Home</a>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
-                <a href="foodMenu.html">Menu</a>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
-                <a href="foodContact.html">Contact Us</a></h3>
+                <ul class="nav nav-pills">
+                    <li class="inactive"><a href="foodHome.html"><span class="glyphicon glyphicon-home"></span></a></li>
+                    <li class="active"><a href="foodMenu.html">Menu</a></li>
+                    <li class="inactive"><a href="foodContact.html">Contact Us</a></li>
+                </ul>
             </nav>
         </div>
         <div style="background-color: bisque">
             <hr/>
             <br/>
-            <div class="main">
-            <table class="main">
+            <div class="table-responsive">
+            <table class="table" id="main">
                 <tr class="main">
                     <th>Classic Surf and Turf</th>
                     <th>Captain's Kebabs</th>
@@ -69,8 +78,8 @@
                 </tr>
             </table>
             </div>
-            <div class="beverages">
-            <table class="beverages">
+            <div class="table-responsive">
+            <table class="table" id="beverages">
                 <tr class="beverages">
                     <th>Beverages</th>
                     <th>Prices</th>
@@ -93,7 +102,7 @@
                 </tr>
             </table>
             </div>
-            <br/><br/><br/><br/><br/><br/><hr/>
+            <br/><hr/>
         </div>
         <div>
             <footer>

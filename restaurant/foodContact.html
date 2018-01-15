@@ -2,43 +2,31 @@
 <html>
     <head>
         <title>The Nautical Bovine - Contact Us</title>
+        <link rel="stylesheet" href="C:\Repos\I2WD-html\restaurant\bootstrap-3.3.7-dist\css\bootstrap.css"/>
         <link href="foodStyle.css" rel="stylesheet" type="text/css"/>
         <style>
-            #nameLabel, #emailLabel, #phoneLabel {
-                margin-left: 790px;
+            .col-lg-7 {
+                padding-left: 62px;
+                border: 0px solid tan;
+            }
+            .col-lg-4 {
+                text-align: right;
             }
             #name, #email, #phone, #inquiryReason {
                 width: 250px;
-                margin-left: 10px;
-            }
-            #inquiryReasonLabel {
-                margin-left: 710px;
-            }
-            #additionalInfoLabel {
-                margin-left: 680px;
-            }
-            #additionalInfo {
-                width: 250px;
-                height: 100px;
-                margin-left: 10px;
-            }
-            #visitedNoLabel {
-                margin-left: 620px;
-            }
-            #visitedNo, #monday {
-                margin-left: 10px;
-            }
-            #mondayLabel {
-                margin-left: 670px;
-            }
-            #sendRequest {
-                margin-left: 1000px;
             }
             label {
                 font-weight: bold;
             }
             #additionalInfoLabel {
                 font-weight: normal;
+            }
+            #additionalInfo {
+                width: 250px;
+                height: 100px;
+            }
+            #contactMain {
+                background-color: bisque;
             }
         </style>
     </head>
@@ -49,68 +37,118 @@
                 <hr/>
             </header>
         </div>
-        <div class="nav">
+        <div>
             <nav>
-                <h3>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="foodHome.html">Home</a>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
-                <a href="foodMenu.html">Menu</a>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
-                <a href="foodContact.html">Contact Us</a></h3>
-                <hr/>
+                <ul class="nav nav-pills">
+                    <li class="inactive"><a href="foodHome.html"><span class="glyphicon glyphicon-home"></span></a></li>
+                    <li class="inactive"><a href="foodMenu.html">Menu</a></li>
+                    <li class="active"><a href="foodContact.html">Contact Us</a></li>
+                </ul>
             </nav>
         </div>
-        <br/><br/>
+        <div id="contactMain">
+        <hr/><br/>
         <form action="#" method="post">
-            <div>
-                <label id="nameLabel" for="name">Name: </label>
-                <input id="name" name="name" type="text"/>
-                <br/><br/>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <label id="nameLabel" for="name">Name: </label>
+                    </div>
+                    <div class="col-lg-8">
+                        <input id="name" name="name" type="text"/>
+                    </div>
+                </div>
             </div>
-            <div>
-                <label id="emailLabel" for="email">Email: </label>
-                <input id="email" name="email" type="text"/>
-                <br/><br/>
+            <br/><br/>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <label id="emailLabel" for="email">Email: </label>
+                    </div>
+                    <div class="col-lg-8">
+                        <input id="email" name="email" type="text"/>
+                    </div>
+                </div>
             </div>
-            <div>
-                <label id="phoneLabel" for="phone">Phone: </label>
-                <input id="phone" name="phone" type="text"/>
-                <br/><br/>
+            <br/><br/>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <label id="phoneLabel" for="phone">Phone: </label>
+                    </div>
+                    <div class="col-lg-8">
+                        <input id="phone" name="phone" type="text"/>
+                    </div>
+                </div>
             </div>
-            <div>
-                <label id="inquiryReasonLabel" for="inquiryReason">Reason for Inquiry: </label>
-                <select id="inquiryReason" name="inquiryReason">
-                    <option value="catering">Catering</option>
-                    <option value="privateParty">Private Party</option>
-                    <option value="feedback">Feedback</option>
-                    <option value="other">Other</option>
-                </select>
-                <br/><br/>
+            <br/><br/>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <label id="inquiryReasonLabel" for="inquiryReason">Reason for Inquiry: </label>
+                    </div>
+                    <div class="col-lg-8">
+                        <select id="inquiryReason" name="inquiryReason">
+                            <option value="catering">Catering</option>
+                            <option value="privateParty">Private Party</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
             </div>
-            <div>
-                <label id="additionalInfoLabel" for="additionalInfo">Additional Information: </label>
-                <textarea id="additionalInfo" name="additionalInfo"></textarea>
-                <br/><br/>
+            <br/><br/>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <label id="additionalInfoLabel" for="additionalInfo">Additional Information: </label>
+                    </div>
+                    <div class="col-lg-8">
+                        <textarea id="additionalInfo" name="additionalInfo"></textarea>
+                    </div>
+                </div>
             </div>
-            <div>
-                <label id="visitedNoLabel" for="visitedNo">Have you been to the restaurant? </label>
-                <input id="visitedNo" name="visitedNo" type="radio" value="no"/> No
-                <input id="visitedYes" name="visitedYes" type="radio" value="yes"/> Yes
-                <br/><br/>
+            <br/><br/>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <label id="visitedNoLabel" for="visitedNo">Have you been to the restaurant? </label>
+                    </div>
+                    <div class="col-lg-8">
+                        <input id="visitedNo" name="visitedNo" type="radio" value="no"/> No
+                        <input id="visitedYes" name="visitedYes" type="radio" value="yes"/> Yes
+                    </div>
+                </div>
             </div>
-            <div>
-                <label id="mondayLabel" for="monday">Best days to contact you? </label>
-                <input id="monday" name="monday" type="checkbox" value="monday"/>M
-                <input id="tuesday" name="tuesday" type="checkbox" value="tuesday"/>T
-                <input id="wednesday" name="wednesday" type="checkbox" value="wednesday"/>W
-                <input id="thursday" name="thursday" type="checkbox" value="thursday"/>Th
-                <input id="friday" name="friday" type="checkbox" value="friday"/>F
-                <br/><br/>
+            <br/><br/>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <label id="mondayLabel" for="monday">Best days to contact you? </label>
+                    </div>
+                    <div class="col-lg-8">
+                        <input id="monday" name="monday" type="checkbox" value="monday"/>M
+                        <input id="tuesday" name="tuesday" type="checkbox" value="tuesday"/>T
+                        <input id="wednesday" name="wednesday" type="checkbox" value="wednesday"/>W
+                        <input id="thursday" name="thursday" type="checkbox" value="thursday"/>Th
+                        <input id="friday" name="friday" type="checkbox" value="friday"/>F
+                    </div>
+                </div>
             </div>
-            <div>
-                <input id="sendRequest" name="sendRequest" type="submit" value="Send Request"/>
+            <br/><br/>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5"></div>
+                    <div class="col-lg-7">
+                        <input id="sendRequest" name="sendRequest" type="submit" value="Send Request"/>
+                    </div>
+                </div>
             </div>
         </form>
-        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <br/><br/><hr/>
+        </div>
         <footer>
-            <hr/>
+            
             <h4>123 Happy St., Bloomington, Minnesota, 55437</h4>
             <h4>(123)486-8863</h4>
         </footer>
